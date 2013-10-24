@@ -1,7 +1,7 @@
 require "rspec"
 require "racional"
 
-define Racional do
+describe Racional do
 	
 	# Se ejecuta antes de cada prueba.
 	before :each do
@@ -14,11 +14,19 @@ define Racional do
 	end
 
 	it "Comprobar si existe denominador" do
-		@racionalA.denom.should == 5
+		@racionalB.denom.should == 3
 	end
 	
 	it "Combrobar el metodo to_s" do
 		@racionalB.to_s.should == "1/3"
+	end
+	
+	it "Comprobar la llamada a la función num" do
+		@racionalA.respond_to?("num").should == true
+	end
+
+	it "Comprobar la llamada a la función denom" do
+		@racionalB.respond_to?("denom").should == true
 	end
 	
 	
