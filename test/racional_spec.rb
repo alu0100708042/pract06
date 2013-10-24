@@ -29,7 +29,7 @@ describe Racional do
 		@racionalB.respond_to?("denom").should == true
 	end
 	
-	
+	# Comentario
 	
 	
 	
