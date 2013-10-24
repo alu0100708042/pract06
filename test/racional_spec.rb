@@ -17,5 +17,9 @@ define Racional do
 		@racionalA.denom.should == 5
 	end
 	
-
+	it "Combrobar el metodo to_s" do
+		@racionalB.to_s.should == "1/3"
+	end
+	
+	
 end
