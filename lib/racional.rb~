@@ -1,6 +1,6 @@
 
 # creando getters  para comprobar la prueba
-require 'gcd'
+
 
 class Racional
 	attr_reader :num, :denom
