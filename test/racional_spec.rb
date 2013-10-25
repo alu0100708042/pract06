@@ -30,7 +30,7 @@ describe Racional do
 	end
 	
 	it "Comprobar que este en forma reducida" do
-		@racional.should == Racional.new(1,3)
+		@racionalB.to_s.should == Racional.new(1,3).to_s
 	end
 	
 	
