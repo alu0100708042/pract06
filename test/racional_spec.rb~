@@ -21,11 +21,11 @@ describe Racional do
 		@racionalB.to_s.should == "1/3"
 	end
 	
-	it "Comprobar la llamada a la función num" do
+	it "Comprobar la llamada a la funcion num" do
 		@racionalA.respond_to?("num").should == true
 	end
 
-	it "Comprobar la llamada a la función denom" do
+	it "Comprobar la llamada a la funcion denom" do
 		@racionalB.respond_to?("denom").should == true
 	end
 	

@@ -6,7 +6,7 @@ describe Racional do
 	# Se ejecuta antes de cada prueba.
 	before :each do
 		@racionalA = Racional.new(1,5)		
-		@racionalB = Racional.new(1,3)		
+		@racionalB = Racional.new(3,9)		
 	end
 	
 	it "Comprobar si existe numerador" do
@@ -18,7 +18,7 @@ describe Racional do
 	end
 	
 	it "Combrobar el metodo to_s" do
-		@racionalB.to_s.should == "1/3"
+		@racionalA.to_s.should == "1/5"
 	end
 	
 	it "Comprobar la llamada a la funcion num" do
@@ -29,8 +29,18 @@ describe Racional do
 		@racionalB.respond_to?("denom").should == true
 	end
 	
-	# Comentario
+	it "Comprobar que este en forma reducida" do
+		@racional.should == Racional.new(1,3)
+	end
 	
 	
+
+
+
+
+
+
+
+
 	
 end
