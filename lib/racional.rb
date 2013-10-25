@@ -14,4 +14,8 @@ class Racional
 	def to_s
 		"#{num}/#{denom}"
 	end
+	# se utiliza para mostrar en formato flotante 
+	def to_f
+		num.to_f/denom
+	end
 end
