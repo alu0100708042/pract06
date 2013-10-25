@@ -30,17 +30,12 @@ describe Racional do
 	end
 	
 	it "Comprobar que este en forma reducida" do
-		@racional.should == Racional.new(1,3)
+		@racionalB.to_s.should == Racional.new(1,3).to_s
 	end
 	
-	
-
-
-
-
-
-
-
+	it "Comprobar el formato flotante" do
+		@racionalA.to_f.should == 1.to_f/5.to_f
+	end
 
 	
 end
